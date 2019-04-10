@@ -1,0 +1,43 @@
+{
+    "key": "group_5bc0af10c61e7",
+    "title": "Theme Settings",
+    "fields": [
+        {
+            "key": "field_5bc0af1c5e4b7",
+            "label": "Typekit ID",
+            "name": "typekit_id",
+            "type": "text",
+            "instructions": "If this theme requires a Typekit collection, put the ID here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1539354454
+}

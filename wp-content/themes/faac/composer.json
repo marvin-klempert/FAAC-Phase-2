@@ -1,0 +1,8 @@
+{
+    "name": "designfwd/fwd-boilerplate-theme",
+    "description": "WordPress boilerplate theme for use as a starting point for development",
+    "license": "GPL-3.0",
+    "require": {
+        "php" : ">=5.6"
+    }
+}

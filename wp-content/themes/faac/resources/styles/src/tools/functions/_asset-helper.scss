@@ -1,0 +1,44 @@
+/**
+ * Asset helper functions
+ */
+
+/// Base path for assets (fonts, images...),
+/// should not include trailing slash
+/// @access public
+/// @type String
+$asset-base-path: '../../../resources' !default;
+
+
+/// Path for included font files
+/// @public
+/// @type String
+$font-src-path: $asset-base-path + '/fonts/src/' !default;
+
+@function woff( $family, $file ) {
+  @return ( $font-src-path + $family + '/' + $file + '.woff' );
+}
+
+@function woff2( $family, $file ) {
+  @return ( $font-src-path + $family + '/' + $file + '.woff2' );
+}
+
+/// Path for included image assets
+/// @public
+/// @type String
+$image-base-path: ($asset-base-path + '/images/src/') !default;
+
+@function gif( $file ) {
+  @return ( $image-base-path + 'gif/' + $file + '.gif' );
+}
+
+@function jpg( $file ) {
+  @return ( $image-base-path + 'jpg/' + $file + '.jpg' );
+}
+
+@function png( $file ) {
+  @return ( $image-base-path + 'png/' + $file + '.png' );
+}
+
+@function svg( $file ) {
+  @return ( $image-base-path + 'svg/' + $file + '.svg' );
+}

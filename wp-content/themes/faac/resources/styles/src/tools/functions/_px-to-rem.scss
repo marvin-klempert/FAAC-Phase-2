@@ -1,0 +1,17 @@
+/**
+ * Pixel to rem function, inspired by Chris Coyier's post on CSS Tricks:
+ * https://css-tricks.com/snippets/sass/px-to-em-functions/
+ */
+$rem-size: 16 !default;
+
+@function rem($pixels, $context: $rem-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}

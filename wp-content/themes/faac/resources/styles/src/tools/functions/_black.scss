@@ -1,0 +1,10 @@
+// Produces a value of black at a specific alpha
+@function black( $value, $alpha: 1 ) {
+  @if( $value > 1 ) {
+    $value: ( $value * 255 );
+  }
+  @else {
+    $value: ( $value / 100 * 255 );
+  }
+  @return rgba( $value, $value, $value, $alpha );
+}

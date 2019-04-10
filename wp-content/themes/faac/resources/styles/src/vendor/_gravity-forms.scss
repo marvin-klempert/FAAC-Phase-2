@@ -1,0 +1,32 @@
+// Resets basic styles
+.gform_fields {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.gform_body {
+  width: 100%;
+
+  .gform_fields {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.gfield_label {
+  display: none;
+}
+
+.ginput_container {
+  margin: 0 auto;
+  max-width: 100%;
+
+  .medium,
+  .large {
+    width: 100%;
+  }
+}
+
+.gform_validation_container {
+  display: none;
+}

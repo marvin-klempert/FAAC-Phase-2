@@ -1,0 +1,34 @@
+/**
+ * Forms
+ */
+
+select {
+  &::-ms-expand { // Hack for IE 10 and 11
+    display: none;
+  }
+}
+
+// button {}
+
+#{$all-buttons},
+#{$all-text-inputs} {
+  border: none;
+}
+
+// datalist {}
+// fieldset {}
+// form {}
+
+// #{$all-text-inputs} {}
+
+// input[type="submit"] {}
+
+// label {}
+// legend {}
+// meter {}
+// optgroup {}
+// option {}
+// output {}
+// progress {}
+// select {}
+// textarea {}

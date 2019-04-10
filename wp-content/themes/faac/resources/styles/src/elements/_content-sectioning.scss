@@ -1,0 +1,25 @@
+/**
+ * Content Sectioning
+ */
+
+// address {}
+// article {}
+// aside {}
+// footer {}
+// #{$all-headers} {}
+// h1 {}
+// h2 {}
+// h3 {}
+// h4 {}
+// h5 {}
+// h6 {}
+// header {}
+// hgroup {}
+// main {}
+// nav {}
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

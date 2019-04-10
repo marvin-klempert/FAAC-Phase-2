@@ -1,0 +1,20 @@
+// Standard blacks and whites
+$black: black( 0, 1 );
+$black-10: black( 0, .1 );
+$black-25: black( 0, .25 );
+$black-50: black( 0, .5 );
+$black-65: black( 0, .65 );
+$black-85: black( 0, .85 );
+
+$white: black( 255, 1 );
+
+$clear-black: black( 0, 0 );
+$clear-white: black( 255, 0 );
+
+// Social media-related colors
+$color-facebook: rgba(#3b5998, 1);
+$color-googleplus: rgba(#db4437, 1);
+$color-linkedin: rgba(#0077b5, 1);
+$color-twitter: rgba(#1da1f2, 1);
+
+// Theme colors

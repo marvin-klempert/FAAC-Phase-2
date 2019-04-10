@@ -1,0 +1,71 @@
+{
+  "name": "fwd-boilerplate-theme",
+  "version": "1.1.0",
+  "description": "WordPress boilerplate theme for use as a starting point for development",
+  "scripts": {
+    "build": "webpack --config config/webpack.config.js",
+    "watch": "webpack --watch --config config/webpack.config.js"
+  },
+  "repository": "https://github.com/designfwd/fwd-boilerplate-theme.git",
+  "author": "FWD Creative LLC",
+  "license": "GPL-3.0",
+  "browserslist": [
+    "> 1%",
+    "last 1 version",
+    "Firefox ESR",
+    "not dead"
+  ],
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "impliedStrict": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jquery": true
+    },
+    "parser": "babel-eslint",
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-console": 1,
+      "no-undef": 1,
+      "no-unused-vars": 1
+    }
+  },
+  "dependencies": {
+    "dialog-polyfill": "^0.5.0",
+    "lazysizes": "^4.1.7",
+    "smoothscroll-polyfill": "^0.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "autoprefixer": "^9.5.1",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "bourbon": "^5.1.0",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.2",
+    "file-loader": "^3.0.1",
+    "image-webpack-loader": "^4.6.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^4.11.0",
+    "node-sass-magic-importer": "^5.3.1",
+    "postcss-dialog-polyfill": "^1.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.10.1",
+    "stylelint-scss": "^3.5.4",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
