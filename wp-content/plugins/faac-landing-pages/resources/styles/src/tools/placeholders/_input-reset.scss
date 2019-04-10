@@ -1,0 +1,11 @@
+/**
+ * Resets basic input styles
+ */
+%input-reset {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}

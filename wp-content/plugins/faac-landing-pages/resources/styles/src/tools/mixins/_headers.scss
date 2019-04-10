@@ -1,0 +1,13 @@
+/// Mixin for affecting styles on Hx tags
+// Please note that you must interpolate the variable (#{}) to use it as a selector
+
+$_headers-list: (
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6"
+);
+
+$all-headers: _assign-inputs($_headers-list);

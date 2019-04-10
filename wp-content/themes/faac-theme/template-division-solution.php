@@ -1,0 +1,237 @@
+<?php
+/**
+ * Template Name: Division - Solution (D7)
+ */
+?>
+
+<?php while (have_posts()) : the_post(); ?>
+  <?php get_template_part('templates/page', 'header'); ?>
+
+
+  <?php // Defines a division class to add to sections
+  // Also defines the link column division for related links
+  $division = get_the_terms( get_the_ID(), 'division' );
+
+  $divisionName = $division[0]->name;
+    if( $divisionName == 'FAAC Commercial' ){
+      $divisionClass = 'faac-commercial';
+      $linkColumn_division = 'faacCommercial';
+    } elseif( $divisionName == 'FAAC Military' ){
+      $divisionClass = 'faac-military';
+      $linkColumn_division = 'faacMilitary';
+    } elseif( $divisionName == 'MILO Range' ){
+      $divisionClass = 'milo-range';
+      $linkColumn_division = 'miloRange';
+    } elseif( $divisionName == 'Realtime Technologies' ){
+      $divisionClass = 'rti';
+      $linkColumn_division = 'rti';
+    } else {
+      $divisionClass = '';
+      $linkColumn_division = '';
+    }
+  ?>
+
+
+  <?php // Slider area
+    if( get_field('solutionsChild_slider') != '' ):
+      $slider = get_field('solutionsChild_slider');
+        $slider_gallery = $slider['slider_gallery'];
+        $slider_category = $slider['slider_category'];
+        $slider_upperText = $slider['slider_upperText'];
+        $slider_lowerText = $slider['slider_lowerText'];
+  ?>
+    <section class="slider slider--solutions-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/10-sliders/100-basic-slider.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+
+  <?php // Breadcrumbs & Flags ?>
+  <div class="breadcrumbs-flags breadcrumbs-flags--solution-child <?php echo $divisionClass; ?>">
+
+    <?php // Breadcrumbs ?>
+    <section class="breadcrumbs breadcrumbs--solution-child <?php echo $divisionClass; ?>">
+      <div class="breadcrumbs <?php echo $divisionClass; ?>" typeof="BreadcrumbList" vocab="https://schema.org/">
+          <?php if(function_exists('bcn_display'))
+          {
+              bcn_display();
+          }?>
+      </div>
+    </section>
+
+    <?php //Sector Flag ?>
+    <section class="sector-flag sector-flag--simulator-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/20-general/280-sector-flag.php', false, false ));
+      ?>
+    </section>
+
+
+    <?php //Division Flag ?>
+    <section class="division-flag division-flag--solutions-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/40-divisions/430-division-flag.php', false, false ));
+      ?>
+    </section>
+  </div>
+
+
+  <?php // Lead Content
+    if( get_field('solutionsChild_lead') != '' ):
+      $introContent = get_field('solutionsChild_lead');
+        $mediaBlock_direction = $introContent['mediaBlock_direction'];
+        $mediaBlock_image = $introContent['mediaBlock_image'];
+        $mediaBlock_headline = $introContent['mediaBlock_headline'];
+        $mediaBlock_subImage = $introContent['mediaBlock_subImage'];
+        $mediaBlock_content = $introContent['mediaBlock_content'];
+  ?>
+    <section class="intro-content intro-content--simulator-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/20-general/250-media-block.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+
+  <?php // Video Playlist
+    if( get_field('solutionsChild_videos') != '' ):
+      $solutionsChild_videos = 'solutionsChild_videos';
+        $videoPlaylist = $solutionsChild_videos . '_videoPlaylist';
+  ?>
+    <section class="video-playlist video-playlist--solutions-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/50-promotions/540-video-playlist.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+  <?php // Solutions Features area
+    if( get_field('solutionsChild_features') != '' ):
+      $solutionsFeatures = get_field('solutionsChild_features');
+        $centeredContent_headline = $solutionsFeatures['centeredContent_headline'];
+        $centeredContent_body = $solutionsFeatures['centeredContent_body'];
+  ?>
+    <section class="centered-content centered--content--solutions-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/20-general/200-centered-content.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+
+  <?php // Feature Block
+    if( get_field('solutionsChild_featureBlocks') != '' ):
+      $featureBlocks = 'solutionsChild_featureBlocks';
+        $featureBlock = $featureBlocks . '_featureBlock';
+  ?>
+    <section class="feature-blocks feature-blocks--solutions-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/20-general/230-feature-block.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+
+  <?php // Secondary Content
+    $secondaryContent = get_field('solutionsChild_secondaryContent');
+      $article_headline = $secondaryContent['article_headline'];
+      $article_body = $secondaryContent['article_body'];
+
+    if( $article_headline != '' ):
+  ?>
+    <section class="secondary-content secondary-content--solutions-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/20-general/240-article.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+
+  <?php //Documentation Links
+      $solutionsChild_documentation = get_field('solutionsChild_documentation');
+        $linkBlock_icon = $solutionsChild_documentation['linkBlock_icon'];
+        $linkBlock_title = $solutionsChild_documentation['linkBlock_title'];
+        $linkBlock_list = $solutionsChild_documentation['linkBlock_list'];
+    if( $linkBlock_title != '' ):
+  ?>
+    <section class="documentation-links documentation-links--solutions-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/20-general/260-link-block-feature.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+
+  <?php // Main Simulator
+    if( get_field('solutionsChild_simulator') != '' ):
+      $mainSimulator = get_field('solutionsChild_simulator');
+        $mainSimulator_page = $mainSimulator['mainSimulator_page'];
+        $mainSimulator_headline = $mainSimulator['mainSimulator_headline'];
+        $mainSimulator_buttonText = $mainSimulator['mainSimulator_buttonText'];
+  ?>
+    <section class="main-simulator main-simulator--solutions-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/30-options/341-main-simulator.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+
+  <?php //Related Links
+    if( get_field('solutionsChild_relatedLinks') != '' ):
+      $relatedLinks = 'solutionsChild_relatedLinks';
+        $linkColumn = $relatedLinks . '_linkColumn';
+  ?>
+    <section class="related-links related-links--solutions-child <?php echo $divisionClass; ?>">
+    <?php
+        if( $divisionClass != ''):
+          include (locate_template( 'templates/30-options/361-division-related-links.php', false, false ));
+        else:
+          include ( locate_template( 'templates/30-options/360-related-links-block.php', false, false ));
+        endif;
+      ?>
+    </section>
+  <?php endif; ?>
+
+
+  <?php //Category headings area
+    if( 'solutionsChild_categoryHeadings' != '' ):
+      $categoryHeading = 'solutionsChild_categoryHeadings';
+        $categoryLinks_categories = $categoryHeading . '_categoryLinks_categories';
+  ?>
+    <section class="category-heading category-heading--solution-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/30-options/370-category-links-block.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+
+  <?php //Division promotion
+    if( get_field('solutionsChild_divisionPromo') != '' ):
+      $divisionPromo = get_field('solutionsChild_divisionPromo');
+        $divisionPromo_select = $divisionPromo['divisionPromo_select'];
+  ?>
+    <section class="division-promotion division-promotion--solution-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/50-promotions/510-division-promotion.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+
+  <?php //Testimonial
+    if( get_field('solutionsChild_testimonial') != '' ):
+      $testimonial = get_field('solutionsChild_testimonial');
+        $testimonial_link = $testimonial['testimonial_link'];
+  ?>
+    <section class="testimonial testimonial--solution-child <?php echo $divisionClass; ?>">
+      <?php
+        include ( locate_template( 'templates/50-promotions/530-testimonial.php', false, false ));
+      ?>
+    </section>
+  <?php endif; ?>
+
+<?php endwhile; ?>

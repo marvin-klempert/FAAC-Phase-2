@@ -1,0 +1,13 @@
+// Page-wide or global styles
+.browser-faac-commercial .acf_widget_Newsletter_Signup,
+.browser-faac-military .acf_widget_Newsletter_Signup,
+.browser-milo-range .acf_widget_Newsletter_Signup,
+.browser-rti .acf_widget_Newsletter_Signup, {
+  display: none; // HACK: Hides newsletter widget.
+}
+
+.browser-body {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}

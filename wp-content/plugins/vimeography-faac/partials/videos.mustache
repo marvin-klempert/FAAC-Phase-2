@@ -1,0 +1,10 @@
+{{#videos}}
+	<div class="vimeography-thumbnail-container">
+		<a class="vimeography-thumbnail popup-vimeo" href="{{link}}" title="{{name}}" data-video-width="{{width}}" data-video-height="{{height}}"{{#allow_downloads}}{{#download}}data-download-{{quality}}="{{link}}"{{/download}}{{/allow_downloads}}>
+      <img alt="{{name}}" src="{{blank_image}}" data-original="{{thumbnail_large}}">
+		</a>
+		<div class="vimeography-info">
+			<span class="vimeography-title">{{name}}</span>
+		</div>
+	</div>
+{{/videos}}

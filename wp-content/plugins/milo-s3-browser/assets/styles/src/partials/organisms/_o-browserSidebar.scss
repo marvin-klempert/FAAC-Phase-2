@@ -1,0 +1,23 @@
+// Styles for the browser page sidebars
+.o-browserSidebar {
+  align-content: center;
+  background-color: $gray-medium;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8rem;
+  padding-top: 4rem;
+  text-align: center;
+  width: 360px;
+
+  .o-browserSidebar__section {
+    padding: 0 2rem 2rem;
+  }
+
+  #milo-sidebar-ie {
+    display: none;
+
+    @supports not (display: flex) {
+      display: inherit;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+/* Special classes and settings for the lazysizes JS library */
+.lazyload--blurUp {
+  filter: blur(.5rem);
+  transition: filter $fast-duration $base-timing;
+
+  &.lazyloaded {
+    filter: blur(0);
+  }
+}

@@ -1,0 +1,8 @@
+/// Mixin for importing fonts
+@mixin font( $family, $file ) {
+  font-family: quote($family);
+  src:
+    local( $file ),
+    url( woff2( $family, $file ) ) format('woff2'),
+    url( woff( $family, $file ) ) format('woff');
+}

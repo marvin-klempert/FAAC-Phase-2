@@ -1,0 +1,99 @@
+<div id="vimeography-gallery-{{gallery_id}}" class="vimeography-faac" data-version="{{version}}"{{#gallery_width}} style="max-width: {{gallery_width}};"{{/gallery_width}}>
+	<div class="vimeography-thumbnails vimeography-group">
+		{{>videos}}
+	</div>
+	{{#paging}}
+		{{>paging}}
+	{{/paging}}
+</div>
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function(){
+
+      vimeography.utilities.enable_autoplay = 1;
+
+			var $gallery = $('#vimeography-gallery-{{gallery_id}}');
+      $gallery.find('.vimeography-thumbnail img').lazyload({effect: "fadeIn"});
+
+			$gallery.on('mouseover', '.vimeography-thumbnail img', function(){
+				$(this).stop().fadeTo(250, 0.90);
+			}).on('mouseout', '.vimeography-thumbnail img', function(){
+				$(this).stop().fadeTo(250, 1);
+			});
+
+      var opts = {
+        padding: 0,
+        maxWidth: 832, /* Disable for Fullscreen */
+        arrows: false,
+        aspectRatio: true,
+        scrolling: 'no',
+        type: 'iframe',
+        helpers: {
+          overlay: {
+            locked: false
+          }
+        },
+        title: ''
+      };
+
+			$gallery.on('click', '.vimeography-thumbnail-container a', function(e){
+
+				var $video = $(this);
+				var promise = vimeography.utilities.get_video( $video.attr('href') );
+
+				opts.width  = $video.data('video-width');
+				opts.height = $video.data('video-height');
+				opts.element = $video; /* stores the fancybox element that was just clicked */
+
+        var title = $video.attr('title');
+        var downloads = {
+          hd: $video.data('download-hd'),
+          sd: $video.data('download-sd'),
+          mobile: $video.data('download-mobile'),
+          source: $video.data('download-source')
+        };
+
+				promise.done(function(video){
+
+					/* This needs to be done so that the Vimeo API can interact with the player */
+					video.html = vimeography.utilities.set_video_id(video.html);
+					video.html = vimeography.utilities.add_fancybox_class(video.html);
+
+					/* Make sure that the HTML is interpreted as a string
+					instead of a DOM element */
+					video.html = $(video.html).prop('outerHTML');
+
+					opts.tpl = { iframe: video.html };
+					opts.href = $(video.html).filter('iframe').attr('src');
+
+          if (downloads.sd !== undefined) {
+            opts.title = "Download: ";
+            $.each(downloads, function(type, link){
+              if (link !== undefined) {
+                opts.title = opts.title + '<a href="' + link + '" download="' + title + '" title="Download ' + title + '">' + type.toUpperCase() + '</a> ';
+              }
+            });
+          }
+
+					opts.afterShow = function(){ $gallery.trigger('vimeography/video/ready'); };
+
+					self == top ? $.fancybox(opts) : parent.jQuery.fancybox(opts);
+				});
+
+				e.preventDefault();
+			});
+
+			{{playlist}}
+
+			$gallery.on('vimeography/playlist/next', function(){
+				var $next_video = opts.element.parent().next();
+				if ($next_video.length) {
+					$next_video.find('a').trigger('click');
+				} else {
+					$.fancybox.close();
+				}
+			});
+		});
+	}(jQuery))
+</script>

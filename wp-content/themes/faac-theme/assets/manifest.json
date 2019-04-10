@@ -1,0 +1,49 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "magnific-popup.js": {
+      "bower": ["magnific-popup"]
+    },
+    "magnific-popup.css": {
+      "bower": ["magnific-popup"]
+    },
+    "font-awesome.css": {
+      "bower": ["font-awesome"]
+    },
+    "flexslider.css": {
+      "bower": ["flexslider"]
+    },
+    "flexslider.js": {
+      "bower": ["flexslider"]
+    },
+    "slidereveal.js": {
+      "bower": ["slidereveal"]
+    },
+    "jquery.mmenu.all.css": {
+      "bower": ["jQuery.mmenu"]
+    },
+    "jquery.mmenu.all.js": {
+      "bower": ["jQuery.mmenu"]
+    },
+    "jquery.unveil.js": {
+      "bower": ["jquery-unveil"]
+    }
+  },
+  "config": {
+    "devUrl": "http://example.dev"
+  }
+}

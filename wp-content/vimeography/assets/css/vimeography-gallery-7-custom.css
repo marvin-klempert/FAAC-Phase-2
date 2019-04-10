@@ -1,0 +1,10 @@
+#vimeography-gallery-7.vimeography-strips .vimeography-info .vimeography-title { color: #222222; } 
+#vimeography-gallery-7.vimeography-strips .vimeography-info .vimeography-description { color: #aaaaaa; } 
+#vimeography-gallery-7.vimeography-strips .vimeography-paging-controls a { color: #000000; } 
+#vimeography-gallery-7.vimeography-strips .vimeography-paging-controls &gt; span { color: #333333; } 
+#vimeography-gallery-7.vimeography-strips .vimeography-spinner div div { background-color: #000000 !important; } 
+#vimeography-gallery-7.vimeography-strips .vimeography-info .vimeography-title { font-size: 14px; } 
+#vimeography-gallery-7.vimeography-strips .vimeography-info .vimeography-description { font-size: 11px; } 
+#vimeography-gallery-7.vimeography-strips .vimeography-thumbnail-container { max-width: 200px; } 
+#vimeography-gallery-7.vimeography-strips .vimeography-thumbnail-container { height: 266px; } 
+#vimeography-gallery-7.vimeography-strips .vimeography-info .vimeography-description { display: none; } 

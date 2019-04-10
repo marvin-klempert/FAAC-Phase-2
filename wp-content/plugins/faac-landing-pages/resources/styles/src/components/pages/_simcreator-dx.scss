@@ -1,0 +1,173 @@
+// SimCreator DX styles
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "din-2014", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+h2 {
+  color: #3b2f8e;
+}
+
+.landing_topBanner {
+  background-color: #055097;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.landing_topBanner_wrap {
+  padding: 0 0 30px;
+}
+
+.top-banner__logo {
+  flex: 0 1 30%;
+}
+
+.top-banner__content {
+  flex: 0 1 70%;
+}
+
+.top-banner__contentTitle {
+  font-size: 2rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+  padding-bottom: 100px;
+}
+
+.top-banner__contentSubtitle {
+  border-bottom: 2px solid #f26622;
+  font-size: 1.5rem;
+  padding-bottom: .8rem;
+}
+
+.top-banner__contentDescription {
+  padding-top: .8rem;
+}
+
+.top-banner__bulletPoints {
+  flex: 0 1 50%;
+}
+
+.top-banner__bulletPointsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.top-banner__bulletPointsList li {
+  flex: 0 1 100%;
+  padding-bottom: 1rem;
+}
+
+.top-banner__form {
+  align-items: center;
+  background-color: #3b2f8e;
+  display: flex;
+  flex: 0 1 50%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.top-banner__formTitle {
+  padding-bottom: 20px;
+}
+
+.top-banner__formLink,
+.footer__form-link {
+  background-color: #f26622;
+  padding: .5rem 2rem;
+  margin: 20px 0;
+}
+
+.top-banner__formPrivacypolicy {
+  color: #665aa7;
+}
+
+.top-banner__testimonial {
+  display: flex;
+  padding: 4rem 0;
+}
+
+.top-banner__testimonialImage {
+  flex: 0 1 30%;
+}
+
+.top-banner__testimonialContent {
+  flex: 0 1 70%;
+}
+
+.landing_mainContent {
+  padding: 20px 0;
+}
+
+.landing_mainContent_wrap {
+  padding-bottom: 20px;
+}
+
+.mainContent__block {
+  align-items: center;
+  color: #808080;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__form {
+  background-color: #3b2f8e;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px 20px;
+}
+
+.footer__formTitle  {
+  color: #fff;
+  display: flex;
+  flex: 0 1 100%;
+  justify-content: center;
+}
+
+.footer__form-form {
+  flex: 0 1 50%;
+}
+
+.footer__form-link {
+  flex: 0 1 50%;
+}
+
+.footer__formPrivacypolicy {
+  color: #665aa7;
+  display: flex;
+  flex: 0 1 100%;
+  justify-content: center;
+}
+
+.footer__testimonial {
+  color: #0255a3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer__tagline {
+  color: #0255a3;
+  text-align: center;
+  padding: 0 0 30px;
+}
+

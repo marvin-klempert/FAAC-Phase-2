@@ -1,0 +1,30 @@
+// File folder styles
+.a-fileFolder {
+  align-content: center;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+
+  .a-fileFolder__icon {
+    display: flex;
+    height: 3.2rem;
+    margin: .5rem;
+    width: 3.2rem;
+
+    &.a-fileFolder__icon--open {
+      height: 4.2rem;
+      margin: .2rem .15rem;
+      width: 3.9rem;
+    }
+
+    &.a-fileFolder__icon--hidden {
+      display: none;
+    }
+  }
+
+  .a-fileFolder__folder {
+    font-weight: 400;
+    margin: 1.5rem 0 0 0;
+    padding: 0 0 0 .5rem;
+  }
+}

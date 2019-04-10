@@ -1,0 +1,115 @@
+@charset 'utf-8';
+
+/**
+ * Vendor
+ * Third-party styles, functions, and mixins
+ */
+// Bourbon
+@import '~bourbon/core/bourbon';
+
+// Normalize SCSS
+@import '~normalize-scss/sass/normalize';
+@include normalize();
+
+
+/**
+ * Tools
+ * Globally accessible functions, mixins, and placeholders
+ */
+
+
+/**
+ * Functions
+ */
+// Assets helper functions
+@import './tools/functions/asset-helper';
+
+// Black-based color generator
+@import './tools/functions/black';
+
+// Mathematical power function
+@import './tools/functions/power';
+
+// Pixel-to-rem converter
+@import './tools/functions/px-to-rem';
+
+// Strip a value of its unit
+@import './tools/functions/unit-stripper';
+
+
+/**
+ * Placeholders
+ */
+// Input resets
+@import './tools/placeholders/input-reset';
+// List style resets
+@import './tools/placeholders/list-reset';
+// Transparent overlay
+@import './tools/placeholders/overlay';
+// Preloader
+@import './tools/placeholders/preload';
+
+
+/**
+ * Mixins
+ */
+// Font loader
+@import './tools/mixins/font';
+// Headers
+@import './tools/mixins/headers';
+// Line height crop
+@import './tools/mixins/line-height-crop';
+
+
+/**
+ * Settings
+ * Definitions and variables used throughout the theme. Colors, typography, etc.
+ */
+// Animation-related values
+@import './settings/animation';
+// Colors
+@import './settings/colors';
+// Fonts
+@import './settings/fonts';
+
+
+/**
+ * Elements
+ * Styles applied to specific HTML elements
+ */
+@import './elements/content-sectioning';
+@import './elements/forms';
+@import './elements/image-multimedia';
+@import './elements/inline-text-semantics';
+@import './elements/sectioning-root';
+@import './elements/table-content';
+@import './elements/text-content';
+
+
+/**
+ * Components
+ * Class- and ID-specific styles
+ */
+
+// Atoms
+
+// Molecules
+
+// Organisms
+
+// Page Templates
+@import './components/pages/simcreator-dx';
+
+/**
+ * Vendor-specific overrides and settings
+ */
+// Dialog polyfill
+@import './vendor/dialog-polyfill';
+// Gravity forms
+@import './vendor/gravity-forms';
+// Lazysizes and its addons
+@import './vendor/lazysizes';
+// Pushbar styles
+@import './vendor/pushbar';
+// WordPress editor styles
+@import './vendor/wp-core';

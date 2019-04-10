@@ -1,0 +1,90 @@
+.vimeography-faac {
+  margin: 20px auto;
+  clear: both;
+  text-align: center;
+  width: 100%;
+  font-size: 0; /* Gets rid of the whitespace between inline-block elements */
+  line-height: 0;
+}
+
+.vimeography-faac .vimeography-thumbnails {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.vimeography-faac .vimeography-thumbnail-container {
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+.vimeography-faac .vimeography-thumbnail img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-shadow: #000 0em 0em 0em; /* Fixes weird firefox rendering with opacity changes */
+  cursor: pointer;
+}
+.vimeography-faac .vimeography-info {
+  text-align: center;
+}
+.vimeography-faac .vimeography-info .vimeography-title {
+  color: #222;
+  font-family: sans-serif;
+  font-size: 11px;
+  line-height: 1.2em;
+  overflow: hidden;
+  font-weight: 500;
+  padding: 20px 0 8px;
+  margin: 0;
+  display: block;
+}
+.vimeography-faac .vimeography-info .vimeography-description {
+  color: #aaa;
+  font-family: serif;
+  font-size: 11px;
+  line-height: 1.2em;
+  font-weight: 300;
+  text-transform: lowercase;
+  padding: 0 0 25px;
+  display: block;
+  margin: 0;
+}
+
+.vimeography-faac .vimeography-paging-controls {
+  display: none;
+  margin: 15px auto;
+  clear: both;
+  text-align: center;
+}
+
+.vimeography-faac .vimeography-paging-controls > span {
+  position: relative;
+  top: -10px;
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.vimeography-faac .vimeography-paging {
+  font-family: 'Industry', sans-serif;
+  font-size: 60px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  opacity: 1;
+}
+.vimeography-faac .vimeography-paging:hover {
+  color: rgba(0, 0, 0, 1);
+  opacity: .75;
+}
+
+.vimeography-faac .vimeography-paging-disabled,
+.vimeography-faac .vimeography-paging-disabled:hover {
+  color: rgba(0, 0, 0, 1);
+  opacity: .20;
+}
+
+.vimeography-faac .vimeography-loader {
+  opacity: 0;
+}

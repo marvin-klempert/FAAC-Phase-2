@@ -1,0 +1,27 @@
+/**
+ * Sectioning Root
+ */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// body {}
+
+// ::selection {}
+
+// @reference https://twitter.com/LeaVerou/status/1045768279753666562
+:focus:not(:focus-visible) {
+  outline: none;
+}
