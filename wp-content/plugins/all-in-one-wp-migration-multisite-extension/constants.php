@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // ==================
 // = Plugin Version =
 // ==================
-define( 'AI1WMME_VERSION', '3.69' );
+define( 'AI1WMME_VERSION', '3.71' );
 
 // ===============
 // = Plugin Name =

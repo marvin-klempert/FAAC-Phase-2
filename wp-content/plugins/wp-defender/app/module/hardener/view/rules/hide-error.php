@@ -1,5 +1,5 @@
 <?php
-$checked = $controller->check();
+$checked = $controller->check();	 		  				   	 		 		 
 ?>
 <div id="disable-file-editor" class="sui-accordion-item <?php echo $controller->getCssClass() ?>">
     <div class="sui-accordion-item-header">
