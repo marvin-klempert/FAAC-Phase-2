@@ -35,6 +35,8 @@ This product gives a simple and elegant interface to handle Data Subject Access 
 &#9745; Cookie solution
 &#9745; Integration with ClassiDocs
 &#9745; Integration with Woocommerce Version 3.4.0 or later.
+&#9745; Integration with Easy Digital Download Version 2.6 or later.
+&#9745; Integration with Email Subscribers & Newsletters.
 
 ## IMPORTANT
 Please disable (or otherwise remove) caching capabilities from the plugin pages - as these are very dynamic and based on use interaction.
@@ -100,7 +102,20 @@ WordPress 4.9.6 provides tools to allow administrators to manually handle GDPR r
 In addition to that, we provide tools to manage and track custom consent types and also a privacy policy generator.
 We are also planning to add other important privacy-related features missing from WordPress core over time.
 
+== Screenshots ==
+
+1. GDPR FRAMEWORK GENERAL
+2. GDPR FRAMEWORK COOKIE POPUP
+3. GDPR FRAMEWORK CONSENT
+4. GDPR FRAMEWORK DATA-SUBJECT
+5. GDPR FRAMEWORK PRIVACY TOOL
+
 == Changelog ==
+= 1.0.30 (04/15/2019) =
+* WPSD-259 : Add newsletter compatability.
+* WPSD-260 : Update Details tab.
+* WPSD-263 : Users Seeing Other Deleted Users Information.
+
 = 1.0.29 (02/28/2019) =
 * WPSD-244 : Error when using 'Download as table' with 'Woocommerce data on GDPR tool' enabled.
 * WPSD-236 : EDD GDPR complience with tool.

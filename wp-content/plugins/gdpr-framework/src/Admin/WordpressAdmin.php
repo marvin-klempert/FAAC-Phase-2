@@ -46,6 +46,9 @@ class WordpressAdmin
 
         // Show help notice
         add_action('current_screen', [$this, 'maybeShowHelpNotice'], 999);
+
+        //
+        add_action( 'delete_user', [$this, 'gdprf_delete_userlogs']);
     }
 
 
@@ -173,4 +176,19 @@ class WordpressAdmin
 
         return $postStates;
     }
+    //Delete userlogs if user deleted from admin panel.
+    public function gdprf_delete_userlogs($user_id)
+    {
+        global $wpdb;
+
+        $this->logtableName = $wpdb->prefix . 'gdpr_userlogs';
+
+        return $wpdb->delete(
+            $this->logtableName,
+            [
+                'user_id'   => $user_id,
+            ]
+        );
+    }
+    
 }

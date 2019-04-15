@@ -24,8 +24,8 @@ class WooCommerceGdpr
         add_filter('gdpr/data-subject/data', [$this, 'getWoocommerceExportData'], 20, 2);
         add_action('gdpr/data-subject/delete', [$this, 'deleteWoocommerceEntries']);
         add_action('gdpr/data-subject/anonymize', [$this, 'anonymizeWoocommerceEntries']);
-        add_action( 'woocommerce_review_order_before_submit', [$this, 'gdpr_woo_add_checkout_privacy_policy'], 9 );
-        add_action( 'woocommerce_checkout_process', [$this, 'gdpr_woo_not_approved_privacy'] );
+        add_action('woocommerce_review_order_before_submit', [$this, 'gdpr_woo_add_checkout_privacy_policy'], 9);
+        add_action('woocommerce_checkout_process', [$this, 'gdpr_woo_not_approved_privacy']);
     }
     /*
     *   Fatch all order with details have following status. 'wc-pending','wc-on-hold','wc-processing', 'wc-completed','wc-cancelled','wc-refunded','wc-failed'
@@ -114,7 +114,7 @@ class WooCommerceGdpr
         $delete_order = $wpdb->query($wpdb->prepare("DELETE FROM {$wpdb->prefix}posts WHERE post_type = %s AND ID = %d",'shop_order',$order_id));
     }
     /*
-    *   Add checkout GDPR content
+    *   Add checkout FGDPR content
     */
     public function gdpr_woo_add_checkout_privacy_policy() 
     {   

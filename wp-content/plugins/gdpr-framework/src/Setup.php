@@ -17,6 +17,7 @@ use Codelight\GDPR\DataSubject\DataSubjectIdentificator;
 use Codelight\GDPR\DataSubject\DataSubjectManager;
 use Codelight\GDPR\Modules\ContactForm7\ContactForm7;
 use Codelight\GDPR\Modules\WooCommerceGdpr\WooCommerceGdpr;
+use Codelight\GDPR\Modules\NewsletterGdpr\NewsletterGdpr;
 use Codelight\GDPR\Modules\EddGdpr\EddGdpr;
 use Codelight\GDPR\Components\Themes\Themes;
 use Codelight\GDPR\Components\WordpressUser\WordpressUser;
@@ -113,6 +114,9 @@ class Setup
         
         if ( defined('EDD_VERSION') ) {
             gdpr()->make(EddGdpr::class);
+        }
+        if ( defined('ES_PLUGIN_VERSION') ) {
+            gdpr()->make(NewsletterGdpr::class);
         }
     }
 }

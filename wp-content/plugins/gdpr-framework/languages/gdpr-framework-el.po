@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: The GDPR Framework 1.0\n"
 "Report-Msgid-Bugs-To: gdpr@codelight.eu\n"
 "POT-Creation-Date: 2018-04-16 10:50+0000\n"
-"PO-Revision-Date: 2019-03-25 17:38+0530\n"
+"PO-Revision-Date: 2019-03-27 14:01+0530\n"
 "Last-Translator: john maniatopoulos <webace.wp@gmail.com>\n"
 "Language-Team: Greek\n"
 "Language: el\n"
@@ -1795,3 +1795,7 @@ msgstr "Θα λειτουργήσει για EDD έκδοση 2.0.0 ή νεότ�
 msgctxt "(Admin)"
 msgid "Enable EDD Compatibility"
 msgstr "Ενεργοποίηση συμβατότητας EDD"
+
+#: gdpr-framework.php:298
+msgid "Cookie Policy"
+msgstr "Πολιτική cookie"

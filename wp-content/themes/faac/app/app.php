@@ -26,8 +26,10 @@ require 'helpers/the-svg.php';
 require 'setup/acf-save-location.php';
 require 'setup/admin-menu-remover.php';
 require 'setup/asset-loader.php';
+require 'setup/faac-password-form.php';
 require 'setup/image-sizes.php';
 require 'setup/show-active-template.php';
+require 'setup/taxonomy-extender.php';
 require 'setup/theme-settings-page.php';
 require 'setup/theme-supports.php';
 

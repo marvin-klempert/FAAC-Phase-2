@@ -1714,3 +1714,7 @@ msgstr ""
 msgctxt "(Admin)"
 msgid "Enable EDD Compatibility"
 msgstr ""
+
+#: gdpr-framework.php:298
+msgid "Cookie Policy"
+msgstr ""

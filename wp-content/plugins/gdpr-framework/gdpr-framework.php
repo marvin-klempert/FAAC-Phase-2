@@ -4,7 +4,7 @@
  * Plugin Name:       The GDPR Framework
  * Plugin URI:        https://www.data443.com/gdpr-framework/
  * Description:       Tools to help make your website GDPR-compliant. Fully documented, extendable and developer-friendly.
- * Version:           1.0.29
+ * Version:           1.0.30
  * Author:            Data443
  * Author URI:        https://www.data443.com/
  * Text Domain:       gdpr-framework
@@ -15,7 +15,7 @@ if (!defined('WPINC')) {
     die;
 }
 
-define('GDPR_FRAMEWORK_VERSION', '1.0.29');
+define('GDPR_FRAMEWORK_VERSION', '1.0.30');
 add_action( 'plugins_loaded', 'gdpr_framework_load_textdomain' );
 function gdpr_framework_load_textdomain() 
 {
@@ -294,8 +294,10 @@ function popup_gdpr(){
     $gdpr_hide = get_option('gdpr_onetime_popup');
     
     $type = "opt-out"; #opt-in,opt-out,""
+    
+    $policy_text = __('Cookie Policy', 'gdpr-framework');
 
-    $get_gdpr_data = array('gdpr_url'=>$gdpr_policy_page_url,'gdpr_message'=>$gdpr_message,'gdpr_dismiss'=>$gdpr_dismiss,'gdpr_allow'=>$gdpr_allow,'gdpr_header'=>$gdpr_header,'gdpr_link'=>$gdpr_link,'gdpr_popup_position'=>$position,'gdpr_popup_type'=>$type,'gdpr_popup_static'=>$static,'gdpr_popup_background'=>$gdpr_popup_background,'gdpr_popup_text'=>$gdpr_popup_text,'gdpr_button_background'=>$gdpr_button_background,'gdpr_button_text'=>$gdpr_button_text,'gdpr_button_border'=>$gdpr_button_border,'gdpr_popup_theme'=>$gdpr_popup_theme,'gdpr_hide'=>$gdpr_hide,'gdpr_popup'=>$gdpr_policy_popup);
+    $get_gdpr_data = array('gdpr_url'=>$gdpr_policy_page_url,'gdpr_message'=>$gdpr_message,'gdpr_dismiss'=>$gdpr_dismiss,'gdpr_allow'=>$gdpr_allow,'gdpr_header'=>$gdpr_header,'gdpr_link'=>$gdpr_link,'gdpr_popup_position'=>$position,'gdpr_popup_type'=>$type,'gdpr_popup_static'=>$static,'gdpr_popup_background'=>$gdpr_popup_background,'gdpr_popup_text'=>$gdpr_popup_text,'gdpr_button_background'=>$gdpr_button_background,'gdpr_button_text'=>$gdpr_button_text,'gdpr_button_border'=>$gdpr_button_border,'gdpr_popup_theme'=>$gdpr_popup_theme,'gdpr_hide'=>$gdpr_hide,'gdpr_popup'=>$gdpr_policy_popup,'policy'=>$policy_text);
     wp_localize_script( 'gdpr-framework-cookieconsent-js', 'gdpr_policy_page', $get_gdpr_data );
     wp_enqueue_script( 'gdpr-framework-cookie_popupconsent-js', gdpr('config')->get('plugin.url') . 'assets/cookieconsent.js');
     

@@ -36,6 +36,7 @@ window.addEventListener("load", function () {
       "link": gdpr_policy_page.gdpr_link,
       "deny": gdpr_policy_page.gdpr_dismiss,
       "allow": gdpr_policy_page.gdpr_allow,
+      "policy": gdpr_policy_page.policy,
       "target": '_blank',
     },
     onStatusChange: function (status, chosenBefore) {
