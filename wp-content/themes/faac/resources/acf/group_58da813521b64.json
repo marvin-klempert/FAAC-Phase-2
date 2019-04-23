@@ -1,0 +1,53 @@
+{
+    "key": "group_58da813521b64",
+    "title": "510 - Division Promotion",
+    "fields": [
+        {
+            "key": "field_58e2739a51695",
+            "label": "Division Select",
+            "name": "divisionPromo_select",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "faacCommercial": "FAAC Commercial",
+                "faacMilitary": "FAAC Military",
+                "miloRange": "MILO Range",
+                "rti": "Realtime Technologies (RTI)"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "array",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 510,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": false,
+    "description": "",
+    "modified": 1555956624
+}

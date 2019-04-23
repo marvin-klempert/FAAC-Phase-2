@@ -1,0 +1,478 @@
+{
+    "key": "group_5b2a8cf8c69bf",
+    "title": "733 - Browser Dashboard",
+    "fields": [
+        {
+            "key": "field_5b32a6b6a9099",
+            "label": "Slider",
+            "name": "slider",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58d31322a60eb"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_5b2a8d2b1e28a",
+            "label": "Introductory Content",
+            "name": "milo_welcome_intro",
+            "type": "wysiwyg",
+            "instructions": "This content block appears above the blocks for each file bucket.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Lorem ipsum dolor sit amet, consetetuer adispiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna sit ametaliquam erat volutpat consectetuer adipiscing elit.",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5b2a8dd41e28b",
+            "label": "Browser Link Grid",
+            "name": "milo_welcome_grid",
+            "type": "flexible_content",
+            "instructions": "The grid of browsers to link to",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5b2a8de121b7f": {
+                    "key": "5b2a8de121b7f",
+                    "name": "full-width",
+                    "label": "Full Width",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b2a8e0d1e28c",
+                            "label": "Display Name",
+                            "name": "name",
+                            "type": "flexible_content",
+                            "instructions": "The name of the browser as it should appear on the welcome page",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layouts": {
+                                "5b2a8ec7432bd": {
+                                    "key": "5b2a8ec7432bd",
+                                    "name": "normal",
+                                    "label": "Normal Text",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5b2a8ede1e28d",
+                                            "label": "Text",
+                                            "name": "text",
+                                            "type": "text",
+                                            "instructions": "The text to display",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Content",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "5b2a8efd1e28f": {
+                                    "key": "5b2a8efd1e28f",
+                                    "name": "emphasized",
+                                    "label": "Emphasized Text",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5b2a8efd1e290",
+                                            "label": "Text",
+                                            "name": "text",
+                                            "type": "text",
+                                            "instructions": "The text to display with emphasized styling",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Content",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            },
+                            "button_label": "Add Row",
+                            "min": "",
+                            "max": ""
+                        },
+                        {
+                            "key": "field_5b2a8f2d1e291",
+                            "label": "Linked Browser",
+                            "name": "browser",
+                            "type": "post_object",
+                            "instructions": "The page to link to",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_5b2a8f7b1e292",
+                            "label": "Button Label",
+                            "name": "button",
+                            "type": "text",
+                            "instructions": "The text to show on the button link",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Click to Access",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5b2a8fc71e293": {
+                    "key": "5b2a8fc71e293",
+                    "name": "two-up",
+                    "label": "Two-Up",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b2a8ff21e299",
+                            "label": "Browser 02 - Display Name",
+                            "name": "name_02",
+                            "type": "flexible_content",
+                            "instructions": "The name of the browser as it should appear on the welcome page",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layouts": {
+                                "5b2a8ec7432bd": {
+                                    "key": "5b2a8ec7432bd",
+                                    "name": "normal",
+                                    "label": "Normal Text",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5b2a8ff21e29a",
+                                            "label": "Text",
+                                            "name": "text",
+                                            "type": "text",
+                                            "instructions": "The text to display",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Content",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "5b2a8efd1e28f": {
+                                    "key": "5b2a8efd1e28f",
+                                    "name": "emphasized",
+                                    "label": "Emphasized Text",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5b2a8ff21e29b",
+                                            "label": "Text",
+                                            "name": "text",
+                                            "type": "text",
+                                            "instructions": "The text to display with emphasized styling",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Content",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            },
+                            "button_label": "Add Row",
+                            "min": "",
+                            "max": ""
+                        },
+                        {
+                            "key": "field_5b2a8fc71e297",
+                            "label": "Browser 01 - Linked Browser",
+                            "name": "browser_01",
+                            "type": "post_object",
+                            "instructions": "The page to link to",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_5b2a8fc71e294",
+                            "label": "Browser 01 - Display Name",
+                            "name": "name_01",
+                            "type": "flexible_content",
+                            "instructions": "The name of the browser as it should appear on the welcome page",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layouts": {
+                                "5b2a8ec7432bd": {
+                                    "key": "5b2a8ec7432bd",
+                                    "name": "normal",
+                                    "label": "Normal Text",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5b2a8fc71e295",
+                                            "label": "Text",
+                                            "name": "text",
+                                            "type": "text",
+                                            "instructions": "The text to display",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Content",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "5b2a8efd1e28f": {
+                                    "key": "5b2a8efd1e28f",
+                                    "name": "emphasized",
+                                    "label": "Emphasized Text",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5b2a8fc71e296",
+                                            "label": "Text",
+                                            "name": "text",
+                                            "type": "text",
+                                            "instructions": "The text to display with emphasized styling",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "Content",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            },
+                            "button_label": "Add Row",
+                            "min": "",
+                            "max": ""
+                        },
+                        {
+                            "key": "field_5b2a903c1e29c",
+                            "label": "Browser 02 - Linked Browser",
+                            "name": "browser_02",
+                            "type": "post_object",
+                            "instructions": "The page to link to",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_5b2a8fc71e298",
+                            "label": "Browser 01 - Button Label",
+                            "name": "button_01",
+                            "type": "text",
+                            "instructions": "The text to show on the button link",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Click to Access",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5b2a905a1e29d",
+                            "label": "Browser 02 - Button Label",
+                            "name": "button_02",
+                            "type": "text",
+                            "instructions": "The text to show on the button link",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Click to Access",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        },
+        {
+            "key": "field_5b2a91661e29e",
+            "label": "Lower Content",
+            "name": "milo_welcome_lower",
+            "type": "wysiwyg",
+            "instructions": "This content block appears below the grid.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "DISCLAIMER: Lorem ipsum dolor sit amet, consectetur adipiscing elit. At enim hic etiam dolore. Duo Reges: constructio interrete. Cupiditates non Epicuri divisione finiebat, sed sua satietate. Sed erat aequius Triarium aliquid de dissensione nostra iudicare.",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-browser-dashboard.php"
+            }
+        ]
+    ],
+    "menu_order": 733,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1555956642
+}

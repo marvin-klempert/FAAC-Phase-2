@@ -1,0 +1,110 @@
+{
+    "key": "group_58f3947fe397c",
+    "title": "640 - Widget: Copyright Info",
+    "fields": [
+        {
+            "key": "field_58f394a81b45b",
+            "label": "Company Name",
+            "name": "copyright_name",
+            "type": "text",
+            "instructions": "The name of the company to whom the copyright applies. All other info is added automatically.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "FAAC Incorporated",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58f395241b45c",
+            "label": "Sitemap Link",
+            "name": "copyright_sitemap",
+            "type": "url",
+            "instructions": "The URL of the website sitemap",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58f395841b45d",
+            "label": "Privacy Policy Link",
+            "name": "copyright_privacyPolicy",
+            "type": "url",
+            "instructions": "The URL of the website's Privacy Policy",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58f395a41b45e",
+            "label": "Terms of Service Link",
+            "name": "copyright_termsOfService",
+            "type": "url",
+            "instructions": "The URL of the website's Terms of Service",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58f3960a1b45f",
+            "label": "Design Credit",
+            "name": "copyright_designCredit",
+            "type": "text",
+            "instructions": "The HTML string to use for the site's design crediting.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Web Design by <a href=\"http:\/\/www.designfwd.com\/\">FWD<\/a>",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "acf_widget_copyright_footer"
+            }
+        ]
+    ],
+    "menu_order": 640,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1555956626
+}

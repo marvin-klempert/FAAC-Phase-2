@@ -1,3 +1,0 @@
-Apr 12 2019 16:00:23
-{"type":2,"message":"include(): Failed opening 'Easy_Digital_Downloads.php' for inclusion (include_path='.:')","file":"\/app\/public\/wp-content\/plugins\/wp-defender\/vendor\/hammer\/vendor\/maxmind-db\/reader\/autoload.php","line":40}
-

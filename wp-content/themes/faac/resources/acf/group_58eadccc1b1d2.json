@@ -1,0 +1,126 @@
+{
+    "key": "group_58eadccc1b1d2",
+    "title": "701 - Theme Settings: Call to Action",
+    "fields": [
+        {
+            "key": "field_58eb8a8937378",
+            "label": "Tagline",
+            "name": "cta_tagline",
+            "type": "text",
+            "instructions": "The primary text that drives the call-to-action message",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ready for High Fidelity Training?",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58eb8b7c37379",
+            "label": "Button Text",
+            "name": "cta_buttonText",
+            "type": "text",
+            "instructions": "The text on the cta button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Speak to a Specialist",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5942c85a4ec53",
+            "label": "Linked Page",
+            "name": "cta_pageLink",
+            "type": "page_link",
+            "instructions": "The page to link FAAC contact buttons to.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_58eb8ba73737a",
+            "label": "Phone Number",
+            "name": "cta_phoneNumber",
+            "type": "text",
+            "instructions": "The phone number to include as an alternate contact method.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "XXX-XXX-XXXX",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58eb8bdf3737b",
+            "label": "Background Image",
+            "name": "cta_background",
+            "type": "image",
+            "instructions": "The graphic to use as a graphic behind the cta content",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "w360",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-calls-to-action"
+            }
+        ]
+    ],
+    "menu_order": 701,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1555956627
+}

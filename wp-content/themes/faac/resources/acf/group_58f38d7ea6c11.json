@@ -1,0 +1,324 @@
+{
+    "key": "group_58f38d7ea6c11",
+    "title": "630 - Widget: Contact Info",
+    "fields": [
+        {
+            "key": "field_58f3900fc9820",
+            "label": "Social Media Profiles",
+            "name": "socialMedia",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Profile",
+            "sub_fields": [
+                {
+                    "key": "field_58f3903dc9821",
+                    "label": "Account Icon",
+                    "name": "socialMedia_icon",
+                    "type": "image",
+                    "instructions": "The image to use for linking the social media account",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_58f39077c9822",
+                    "label": "Profile Page",
+                    "name": "socialMedia_link",
+                    "type": "url",
+                    "instructions": "The URL of the social media profile",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5cbe0db9380da",
+            "label": "Contact Information",
+            "name": "contactBlocks",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5cbe0f71380db",
+                    "label": "Michigan Address Title",
+                    "name": "michiganTitle",
+                    "type": "text",
+                    "instructions": "The title text to use for the Michigan location",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "FAAC, INC \/ MI",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5cbe0f92380dc",
+                    "label": "Michigan Address Link",
+                    "name": "michiganLink",
+                    "type": "url",
+                    "instructions": "A link (perhaps a Google Map URL) to link the address title to",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "https:\/\/www.google.com\/maps\/place\/FAAC+Inc\/@42.235444,-83.7538007,17z\/data=!4m13!1m7!3m6!1s0x883cafef88f85859:0x99eb0f8f84604b8a!2s1229+Oak+Valley+Dr,+Ann+Arbor,+MI+48108!3b1!8m2!3d42.235444!4d-83.751612!3m4!1s0x883cafe50e1c9fdb:0x21d5385b7b900fc!8m2!3d42.2352887!4d-83.752117",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5cbe0fb3380dd",
+                    "label": "Michigan Address Block",
+                    "name": "michiganAddress",
+                    "type": "textarea",
+                    "instructions": "The two-line address for the Michigan location",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "1229 Oak Valley Dr\r\nAnn Arbor, MI 48108",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_5cbe1066380de",
+                    "label": "Contact Number TItle",
+                    "name": "numberTitle",
+                    "type": "text",
+                    "instructions": "The text displayed above the contact number block",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Contact",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5cbe1086380df",
+                    "label": "Contact Phone Number",
+                    "name": "numberPhone",
+                    "type": "text",
+                    "instructions": "Use the XXX.XXX.XXXX template",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "877.322.2387",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5cbe10c910b5f",
+                    "label": "Contact Fax Number",
+                    "name": "numberFax",
+                    "type": "text",
+                    "instructions": "Use the XXX.XXX.XXXX template",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "734.761.5368",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5cbe10e510b60",
+                    "label": "Outside Address Title",
+                    "name": "outsideTitle",
+                    "type": "text",
+                    "instructions": "The title text to use for the non-Michigan location",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "FAAC, INC \/ FL",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5cbe110210b61",
+                    "label": "Outside Address Link",
+                    "name": "outsideLink",
+                    "type": "url",
+                    "instructions": "A link (perhaps a Google Map URL) to link the address title to",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "https:\/\/www.google.com\/maps\/place\/Faac+Inc\/@28.620842,-81.2171694,17z\/data=!4m13!1m7!3m6!1s0x88e768fd8bc62b4f:0x649eba15557955bb!2s522+S+Econ+Cir+%23140,+Oviedo,+FL+32765!3b1!8m2!3d28.620842!4d-81.2149807!3m4!1s0x88e768fd9023835d:0x19defe2a9b940c58!8m2!3d28.620842!4d-81.2149807",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5cbe111d10b62",
+                    "label": "Outside Address Block",
+                    "name": "outsideAddress",
+                    "type": "textarea",
+                    "instructions": "The two-line address for the non-Michigan location",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "522 S. Econ Cir. Ste 140\r\nOviedo, FL 32765",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": "br"
+                }
+            ]
+        },
+        {
+            "key": "field_5cbe115710b63",
+            "label": "Parent Company",
+            "name": "parentCo",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5cbe11a310b64",
+                    "label": "Company Logo",
+                    "name": "logo",
+                    "type": "image",
+                    "instructions": "The logo for the parent company",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "240w",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5cbe11c910b65",
+                    "label": "Company URL",
+                    "name": "link",
+                    "type": "url",
+                    "instructions": "The URL to link the parent company's logo to",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "http:\/\/www.arotech.com\/",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 630,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1555960302
+}

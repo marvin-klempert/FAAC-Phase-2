@@ -1,0 +1,50 @@
+{
+    "key": "group_5930698b4d4b1",
+    "title": "970 - Division Page, Solution (D7)",
+    "fields": [
+        {
+            "key": "field_5930698b5e44b",
+            "label": "Linked Solution",
+            "name": "divisionSolution_linkedPage",
+            "type": "post_object",
+            "instructions": "Which solution would you like to link to?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [
+                "category:solution"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-division-solution.php"
+            }
+        ]
+    ],
+    "menu_order": 970,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1555956651
+}

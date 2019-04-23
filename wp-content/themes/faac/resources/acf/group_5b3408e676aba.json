@@ -1,0 +1,80 @@
+{
+    "key": "group_5b3408e676aba",
+    "title": "734 - Browser File Landing Page",
+    "fields": [
+        {
+            "key": "field_5b34090cf10dd",
+            "label": "Slider",
+            "name": "slider",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58d31322a60eb"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_5b561af111ffe",
+            "label": "Disclaimer",
+            "name": "disclaimer",
+            "type": "wysiwyg",
+            "instructions": "This text goes below the content to display any disclaimer information for downloads.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "51681"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "51683"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "51682"
+            }
+        ]
+    ],
+    "menu_order": 734,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1555956642
+}

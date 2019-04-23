@@ -1,0 +1,252 @@
+{
+    "key": "group_58d3f05fbacaf",
+    "title": "110 - Dynamic Slider",
+    "fields": [
+        {
+            "key": "field_58d3f05fbf1cf",
+            "label": "Dynamic Slider",
+            "name": "dynamicSlider",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Slide",
+            "sub_fields": [
+                {
+                    "key": "field_58d3f12231cab",
+                    "label": "Slide Image",
+                    "name": "slider_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "w360",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_58d3f16331cac",
+                    "label": "Upper Text",
+                    "name": "slider_upperText",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_58d3f18531cad",
+                    "label": "Lower Text",
+                    "name": "slider_lowerText",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_590c957d2a7dc",
+                    "label": "Slide Link",
+                    "name": "slider_slideLink",
+                    "type": "select",
+                    "instructions": "How should this slide be linked?",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "Don't add link",
+                        "popup-vimeo": "Link to Vimeo",
+                        "inner-page": "Link to another FAAC page",
+                        "outside-link": "Link to a page outside of FAAC"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "array",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_590c9d91948de",
+                    "label": "Vimeo Link",
+                    "name": "slider_vimeoLink",
+                    "type": "url",
+                    "instructions": "The URL of the Vimeo video to link to",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_590c957d2a7dc",
+                                "operator": "==",
+                                "value": "popup-vimeo"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_590c9dfa948df",
+                    "label": "Page Link",
+                    "name": "slider_pageLink",
+                    "type": "page_link",
+                    "instructions": "The page to link to",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_590c957d2a7dc",
+                                "operator": "==",
+                                "value": "inner-page"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "allow_archives": 1,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_590c95ec2a7dd",
+                    "label": "Outside Link",
+                    "name": "slider_outsideLink",
+                    "type": "url",
+                    "instructions": "The URL (webpage, video, etc.) to link to",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_590c957d2a7dc",
+                                "operator": "==",
+                                "value": "outside-link"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_590c962a2a7de",
+                    "label": "Link Text",
+                    "name": "slider_linkText",
+                    "type": "text",
+                    "instructions": "The text to link with the URL",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_590c957d2a7dc",
+                                "operator": "==",
+                                "value": "popup-vimeo"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_590c957d2a7dc",
+                                "operator": "==",
+                                "value": "inner-page"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_590c957d2a7dc",
+                                "operator": "==",
+                                "value": "outside-link"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Learn More >>",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 110,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": false,
+    "description": "",
+    "modified": 1555956614
+}

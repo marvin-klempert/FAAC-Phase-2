@@ -1,0 +1,72 @@
+{
+    "key": "group_58f38cb55099e",
+    "title": "620 - Widget: Division Logos",
+    "fields": [
+        {
+            "key": "field_58f38cc340eaf",
+            "label": "Logos",
+            "name": "divisionLogo_grid",
+            "type": "repeater",
+            "instructions": "The logos that appear in the division logo area",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Division",
+            "sub_fields": [
+                {
+                    "key": "field_58f38d1540eb0",
+                    "label": "Division",
+                    "name": "divisionLogo_division",
+                    "type": "select",
+                    "instructions": "Choose the division's logo to include",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "faacCommercial": "FAAC Commercial",
+                        "faacMilitary": "FAAC Military",
+                        "miloRange": "MILO Range",
+                        "rti": "Realtime Technologies"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "array",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "acf_widget_division_logo_grid"
+            }
+        ]
+    ],
+    "menu_order": 620,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1555956625
+}

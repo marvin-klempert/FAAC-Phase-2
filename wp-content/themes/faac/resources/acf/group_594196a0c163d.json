@@ -1,0 +1,129 @@
+{
+    "key": "group_594196a0c163d",
+    "title": "380 - Video Thumbnail Grid",
+    "fields": [
+        {
+            "key": "field_594196a0c906b",
+            "label": "Video Thumbnails",
+            "name": "videoThumbnails",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Grid",
+            "sub_fields": [
+                {
+                    "key": "field_594196a0dd482",
+                    "label": "Grid Type",
+                    "name": "videoThumbnails_type",
+                    "type": "select",
+                    "instructions": "Choose whether this grid will be all of a user's videos, a video channel, or a specific album.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "users": "All of a specific user's videos",
+                        "channels": "A video channel"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "array",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_594198bb944a8",
+                    "label": "User \/ Channel",
+                    "name": "videoThumbnails_name",
+                    "type": "text",
+                    "instructions": "This will either be a username if the videos are from a user or a number for a channel.\r\n\r\nTo find the necessary value, look at the page with the videos you'd like to load. For example, you can find all of FAAC Incorporated's uploaded public videos at https:\/\/vimeo.com\/faacincorporated\/videos. The 'faacincorporated' portion is what you need for a username.\r\n\r\nFor a channel, consider the URL for Realtime Technologies: https:\/\/vimeo.com\/channels\/1160681. The value we need there is '1160681'.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59419acb5da83",
+                    "label": "Headline",
+                    "name": "videoThumbnails_headline",
+                    "type": "text",
+                    "instructions": "Headline for the video grid",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59419ae65da84",
+                    "label": "Description",
+                    "name": "videoThumbnails_description",
+                    "type": "wysiwyg",
+                    "instructions": "Description of the video grid",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 380,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": false,
+    "description": "",
+    "modified": 1555956622
+}

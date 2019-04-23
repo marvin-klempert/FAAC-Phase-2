@@ -1,0 +1,109 @@
+{
+    "key": "group_5b2a832361ad4",
+    "title": "730 - Browser Page",
+    "fields": [
+        {
+            "key": "field_5b32a68e41625",
+            "label": "Slider",
+            "name": "slider",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58d31322a60eb"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
+        },
+        {
+            "key": "field_5b2a83b394dbf",
+            "label": "S3 Bucket Name",
+            "name": "milo_bucket_name",
+            "type": "text",
+            "instructions": "The name of the bucket to include on this page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b2a840694dc0",
+            "label": "Preview Image",
+            "name": "milo_bucket_preview",
+            "type": "image",
+            "instructions": "The background image to use for previews or links to this page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "w360",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5b2a844994dc1",
+            "label": "Disclaimer Block",
+            "name": "milo_bucket_disclaimer",
+            "type": "wysiwyg",
+            "instructions": "Disclaimer text to appear below the browser",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "DISCLAIMER: Lorem ipsum dolor sit amet, consectetur adipiscing elit. At enim hic etiam dolore. Duo Reges: constructio interrete. Cupiditates non Epicuri divisione finiebat, sed sua satietate. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. An vero, inquit, quisquam potest probare, quod perceptfum.",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-browser-page.php"
+            }
+        ]
+    ],
+    "menu_order": 730,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1555956639
+}

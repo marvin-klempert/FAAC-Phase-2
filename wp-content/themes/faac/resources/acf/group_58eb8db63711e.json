@@ -1,0 +1,104 @@
+{
+    "key": "group_58eb8db63711e",
+    "title": "703 - Theme Settings: Video Promotion",
+    "fields": [
+        {
+            "key": "field_5939675ed6da4",
+            "label": "Video Playlist",
+            "name": "videoPromo_playlist",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Video",
+            "sub_fields": [
+                {
+                    "key": "field_593967ded6da5",
+                    "label": "Linked Video",
+                    "name": "videoPromo_link",
+                    "type": "url",
+                    "instructions": "The source URL of the video",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_59396851d6da6",
+                    "label": "Video Thumbnail",
+                    "name": "videoPromo_thumbnail",
+                    "type": "image",
+                    "instructions": "Thumbnail image for the video",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "w240",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5939689fd6da7",
+                    "label": "Video Headline",
+                    "name": "videoPromo_headline",
+                    "type": "text",
+                    "instructions": "Text to display, overlaying the video thumbnail",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-video-promotions"
+            }
+        ]
+    ],
+    "menu_order": 703,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1555956628
+}

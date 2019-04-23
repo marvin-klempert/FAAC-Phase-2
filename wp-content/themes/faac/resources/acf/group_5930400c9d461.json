@@ -1,0 +1,50 @@
+{
+    "key": "group_5930400c9d461",
+    "title": "960 - Division Page, Simulation (D6)",
+    "fields": [
+        {
+            "key": "field_5930400cad516",
+            "label": "Linked Simulator",
+            "name": "divisionSimulator_linkedPage",
+            "type": "post_object",
+            "instructions": "Which simulator would you like to link to?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [
+                "category:simulator"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-division-simulator.php"
+            }
+        ]
+    ],
+    "menu_order": 960,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1555956651
+}

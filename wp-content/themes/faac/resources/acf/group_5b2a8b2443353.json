@@ -1,0 +1,200 @@
+{
+    "key": "group_5b2a8b2443353",
+    "title": "732 - Browser Sidebar",
+    "fields": [
+        {
+            "key": "field_5b2a8b608b540",
+            "label": "Internet Explorer Instructions",
+            "name": "milo_sidebar_explorer",
+            "type": "file",
+            "instructions": "Instructions for downloading in Internet Explorer",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5b2a8b8c8b541",
+            "label": "Support Guides",
+            "name": "milo_sidebar_guides",
+            "type": "repeater",
+            "instructions": "Additional manuals available for download",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Guide",
+            "sub_fields": [
+                {
+                    "key": "field_5b2a8bbc8b542",
+                    "label": "Download Label",
+                    "name": "label",
+                    "type": "text",
+                    "instructions": "The text to show on the download link",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Download This Manual or Guide",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5b2a8be18b543",
+                    "label": "Download File",
+                    "name": "file",
+                    "type": "file",
+                    "instructions": "The file to bind the download to",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5b33a8540b885",
+            "label": "Maintenance Guides",
+            "name": "milo_sidebar_maintenance",
+            "type": "repeater",
+            "instructions": "Maintenance guides available for download",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Guide",
+            "sub_fields": [
+                {
+                    "key": "field_5b33a8540b886",
+                    "label": "Download Label",
+                    "name": "label",
+                    "type": "text",
+                    "instructions": "The text to show on the download link",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Download This Manual or Guide",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5b33a8540b887",
+                    "label": "Download File",
+                    "name": "file",
+                    "type": "file",
+                    "instructions": "The file to bind the download to",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5b2a8c6e8b544",
+            "label": "Contact Email",
+            "name": "milo_sidebar_email",
+            "type": "email",
+            "instructions": "The email address to use for email communication",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "test@test.email",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5b2a8c998b545",
+            "label": "Contact Phone Number",
+            "name": "milo_sidebar_phone",
+            "type": "text",
+            "instructions": "The number to use for telephonic communication",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-sidebar-settings"
+            }
+        ]
+    ],
+    "menu_order": 732,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1555956640
+}

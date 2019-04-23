@@ -1,0 +1,123 @@
+{
+    "key": "group_5b2a896b35d13",
+    "title": "731 - Browser Login Form",
+    "fields": [
+        {
+            "key": "field_5b2a8a403b8ef",
+            "label": "Login Heading",
+            "name": "milo_login_heading",
+            "type": "text",
+            "instructions": "The text at the top of the login form",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Sign in to the Downloads Area Here",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b2a8a643b8f0",
+            "label": "Login Subhead",
+            "name": "milo_login_subhead",
+            "type": "text",
+            "instructions": "Text to appear below the heading",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Enter your password below to sign in.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b2a8a873b8f1",
+            "label": "Login Description",
+            "name": "milo_login_description",
+            "type": "wysiwyg",
+            "instructions": "Description block to explain the purpose and contents of the login-protected area.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ea possunt paria non esse. Ut aliquid scire se gaudeant? Ut pulsi recurrant? De vacuitate doloris eadem sententia erit. Qui enim existimabit posse se miserum esse beatus non erit.",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5b2a8ab13b8f2",
+            "label": "Terms of Service Label",
+            "name": "milo_login_tosLabel",
+            "type": "text",
+            "instructions": "How the terms of service or relevant privacy policy should be credited",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Protected Content Terms of Service",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b2a8aea3b8f3",
+            "label": "Terms of Service Page",
+            "name": "milo_login_tosPage",
+            "type": "page_link",
+            "instructions": "The page to link to for the terms of service or privacy policy",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-login-form-settings"
+            }
+        ]
+    ],
+    "menu_order": 731,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1555956640
+}
