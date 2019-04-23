@@ -44,6 +44,11 @@ if( function_exists('acf_add_options_page') ):
       'menu_title'  => 'Sectors',
       'parent_slug' => 'theme-settings',
     ));
+    acf_add_options_sub_page(array(
+      'page_title'  => 'Page Footer',
+      'menu_title'  => 'Page Footer',
+      'parent_slug' => 'theme-settings',
+    ));
 
   // Adds the Divisions settings pages and subpages
   acf_add_options_page(array(

@@ -13,5 +13,5 @@
  * @return string           The template filename if one is located
  */
 function get_partial( $folder, $slug ) {
-  return include( locate_template( 'page-templates/layouts/' . $folder . '/' . $slug . '.php', false, false ) );
+  return include( locate_template( 'page-templates/components/' . $folder . '/' . $slug . '.php', false, false ) );
 }

@@ -18,7 +18,8 @@ project.styles = path.resolve(project.resources, 'styles');
 module.exports = {
   mode: 'production',
   entry: {
-    main: path.resolve(project.scripts, 'src/index.js')
+    common: path.resolve(project.scripts, 'src/common.js'), // Commonly-used JS
+    404: path.resolve(project.scripts, 'src/pages/404.js')
   },
   output: {
     filename: '[name].js',
