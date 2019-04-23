@@ -7604,3 +7604,18 @@ body.faac-military .contact-widget__contact-text a {
     display: none;
   }
 }
+
+/* Styles for the cookie table on the Privacy Policy webpage */
+.a-cookieTable {
+  border: none;
+  border-spacing: 0;
+  margin: 0;
+  width: 100%;
+}
+.a-cookieTable td, .a-cookieTable th {
+  padding: 1rem 0.5rem;
+  text-align: left;
+}
+.a-cookieTable__row--odd {
+  background-color: rgba(247, 247, 247, 1);
+}
