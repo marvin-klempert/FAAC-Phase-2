@@ -10,6 +10,7 @@ function fwd_asset_loader()
 
   $pages = array(
     '404',
+    'category',
     'homepage'
   );
   fwd_register_all( $pages );
