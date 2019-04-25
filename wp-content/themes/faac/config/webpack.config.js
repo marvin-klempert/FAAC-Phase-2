@@ -20,6 +20,7 @@ module.exports = {
   entry: {
     common: path.resolve(project.scripts, 'src/common.js'), // Commonly-used JS
     404: path.resolve(project.scripts, 'src/pages/404.js'),
+    category: path.resolve(project.scripts, 'src/pages/category.js'),
     homepage: path.resolve(project.scripts, 'src/pages/homepage.js')
   },
   output: {
