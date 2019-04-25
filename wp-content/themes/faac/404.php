@@ -36,7 +36,6 @@
     wp_enqueue_style( '404' );
     ?>
   </head>
-
   <body <?php body_class('404'); ?>>
     <?php
     // Body open meta and functions
@@ -50,7 +49,6 @@
         get_component('navigation', 'general');
         ?>
       </section>
-
       <section class="404__banner">
         <?php
         // Basic banner
@@ -62,16 +60,14 @@
         ?>
       </section>
     </header>
-
-    <article class="404__article">
+    <main class="404__article">
       <?php
       // General body content
       ?>
       <div class="body-content">
         Sorry, but the page you were trying to view does not exist.
       </div>
-    </article>
-
+    </main>
     <footer class="404__footer">
       <?php
       // Calls-to-action component
@@ -119,7 +115,6 @@
         get_component('promotions', 'links');
         ?>
       </section>
-
       <?php
       get_layout( 'footer' );
       ?>
@@ -129,5 +124,4 @@
     get_component( 'meta', 'foot' );
     ?>
   </body>
-
 </html>
