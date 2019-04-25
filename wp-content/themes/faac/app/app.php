@@ -33,6 +33,7 @@ require 'helpers/the-svg.php';
 require 'setup/acf-save-location.php';
 require 'setup/admin-menu-remover.php';
 require 'setup/asset-loader.php';
+require 'setup/excerpt-more.php';
 require 'setup/faac-password-form.php';
 require 'setup/image-sizes.php';
 require 'setup/show-active-template.php';
@@ -45,12 +46,3 @@ require 'setup/wp-body-open.php';
  * Theme menus
  */
 require 'menus/navigation-menus.php';
-
-/**
- * Theme sidebars
- */
-require 'sidebars/sidebars.php';
-
-/**
- * Theme widgets
- */
