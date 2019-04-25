@@ -1,6 +1,6 @@
 <?php
 /**
- * Includes a partial layout into a page
+ * Includes a component into a page
  *
  * Because get_template_part() does not bring all variables with it, it's not
  * very useful for ACF integration. As such, the include( locate_template() );
@@ -12,6 +12,6 @@
  *
  * @return string           The template filename if one is located
  */
-function get_partial( $folder, $slug ) {
+function get_component( $folder, $slug ) {
   return include( locate_template( 'page-templates/components/' . $folder . '/' . $slug . '.php', false, false ) );
 }
