@@ -71,7 +71,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "template-division-index.php"
+                "value": "page-templates\/division-index.php"
             }
         ]
     ],
@@ -83,7 +83,7 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "active": true,
+    "active": 1,
     "description": "",
-    "modified": 1555956648
+    "modified": 1556552553
 }
