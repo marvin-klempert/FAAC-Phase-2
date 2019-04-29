@@ -13,15 +13,20 @@
 
 $background = get_query_var( 'background' );
 
+// If a division is set for the page, asign it here
+if( get_query_var( 'division-prefix' ) ):
+  $division = get_query_var( 'division-prefix' );
+endif;
+
 // If the category is set, grab the value
 $category = get_query_var( 'category' );
-if( $category ):
+if( is_array($category) ):
   $catVal = $category['value'];
 endif;
 $upper = get_query_var( 'upper' );
 $lower = get_query_var( 'lower' );
 ?>
-<div class="basic-banner">
+<div class="basic-banner<?php if($division){echo ' basic-banner--' . $division;}?>">
   <?php
   // Background image
   ?>
@@ -48,7 +53,7 @@ $lower = get_query_var( 'lower' );
       <?php echo $background['sizes']['3840w']; ?> 2561w
     "
   />
-  <div class="basic=banner__caption">
+  <div class="basic-banner__caption">
     <?php
     // Category icon, if set
     if( $catVal ):

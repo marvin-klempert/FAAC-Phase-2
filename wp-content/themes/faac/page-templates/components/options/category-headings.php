@@ -6,8 +6,9 @@
  */
 
 $headings = get_query_var( 'headings' );
+$division = get_division_class();
 ?>
-<div class="category-heading">
+<div class="category-heading<?php if($division){echo ' category-heading--' . $division;}?>">
 <?php
 foreach( $headings as $block ):
   $label = $block['heading_select']['label'];
