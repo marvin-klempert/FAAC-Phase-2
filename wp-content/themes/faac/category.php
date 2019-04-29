@@ -79,7 +79,7 @@
     <main class="category__main">
       <section class="category__posts">
         <?php
-        // Blog category archive component
+        // Blog archive component
         $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
         $category = get_queried_object();
         $query = new WP_Query( array(
@@ -89,7 +89,7 @@
         ));
         if( $query->have_posts() ):
           set_query_var( 'query', $query );
-          get_component( 'blog', 'category-archive' );
+          get_component( 'blog', 'archive' );
         endif;
         ?>
       </section>

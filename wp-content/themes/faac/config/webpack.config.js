@@ -21,7 +21,10 @@ module.exports = {
     common: path.resolve(project.scripts, 'src/common.js'), // Commonly-used JS
     404: path.resolve(project.scripts, 'src/pages/404.js'),
     category: path.resolve(project.scripts, 'src/pages/category.js'),
-    homepage: path.resolve(project.scripts, 'src/pages/homepage.js')
+    general: path.resolve(project.scripts, 'src/pages/general.js'),
+    homepage: path.resolve(project.scripts, 'src/pages/homepage.js'),
+    news: path.resolve(project.scripts, 'src/pages/news.js'),
+    single: path.resolve(project.scripts, 'src/pages/single.js')
   },
   output: {
     filename: '[name].js',
