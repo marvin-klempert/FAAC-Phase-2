@@ -3,9 +3,10 @@
  * Universal header content
  */
 
-// Sets the division prefix, needed for some components
+// Sets page query values, needed for some components
 set_category_prefix();
 set_division_prefix();
+set_sector();
 
 // Header metatags
 get_component( 'meta', 'head' );
