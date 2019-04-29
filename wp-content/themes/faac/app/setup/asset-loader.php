@@ -11,6 +11,7 @@ function fwd_asset_loader()
   $templates = array(
     '404',
     'category',
+    'divisionIndex',
     'homepage',
     'general',
     'news',
