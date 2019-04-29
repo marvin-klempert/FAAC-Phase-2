@@ -155,7 +155,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "template-content-general.php"
+                "value": "page-templates\/general.php"
             }
         ]
     ],
@@ -167,7 +167,7 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "active": true,
+    "active": 1,
     "description": "",
-    "modified": 1555956646
+    "modified": 1556292439
 }
