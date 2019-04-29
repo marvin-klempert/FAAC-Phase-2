@@ -1,13 +1,14 @@
 <?php
 /**
- * Blog category archive component
+ * Blog archive component
  *
  * @var object $query     The query object for the archive
  */
 
+$division = get_division_class();
 $query = get_query_var( 'query' );
 ?>
-<div class="posts">
+<div class="posts<?php if($division){echo ' posts--' . $division;}?>">
   <?php
   while( $query->have_posts() ): $query->the_post();
   ?>
