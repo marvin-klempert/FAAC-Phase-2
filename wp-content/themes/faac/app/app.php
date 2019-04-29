@@ -21,6 +21,7 @@ require 'helpers/get-placeholder-url.php';
 require 'helpers/get-svg.php';
 require 'helpers/set-category-prefix.php';
 require 'helpers/set-division-background.php';
+require 'helpers/set-division-logo.php';
 require 'helpers/set-division-prefix.php';
 require 'helpers/set-sector.php';
 require 'helpers/the-nested-links.php';
